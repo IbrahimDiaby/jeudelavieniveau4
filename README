@@ -1,0 +1,46 @@
+
+COMPILATION
+	MODE GUI
+		- make
+	MODE TEXTE
+		- make MODE=TEXTE
+
+EXECUTION
+	- ./bin/main grilles/grille<numero de la grille variant de 1 à 8>.txt
+
+EVOLUTION DU JEU
+	MODE GRAPHIQUE
+		- La touche clique droit permet de faire evoluer la grille
+		- La touche clique gauche permet de quitter le programme
+		- La touche c active/désactive le mode cyclique
+		- La touche v active/désactive le vieillissement
+		- La touche n permet de demander le nom d'une nouvelle grille
+		- La touche o permet de verifier l'oscillation
+	MODE TEXTE
+		- La touche entrée permet de faire evoluer la grille
+		- La touche c active/désactive le mode cyclique
+		- La touche v active/désactive le vieillissement
+		- La touche n permet de demander le nom d'une nouvelle grille
+		- La touche o permet de verifier l'oscillation
+		- La touche q permet de quitter le programme
+
+STRUCTURE DES FICHIERS
+	- src/ contient toutes les sources (*.c)
+	- lib/ contient les librairies (*.a)
+	- include/ contient toutes les en-têtes de fonctions et structures du programme (*.h)
+	- grilles/ contient les fichiers texte (.txt)
+
+GENERATION DE LA DOCUMENTATION DOXYGEN EN HTML
+	- make doc
+
+CREATION D'ARCHIVE
+	- make dist
+
+NETTOYAGE DE LA COMPILATION
+	- make clean
+
+CREATION DE LIBRAIRE
+	- make libjeu.a
+
+SYSTEME DE VERSIONNEMENT
+	Le tag choisi pour les versions du projet est du type : x.x.x
